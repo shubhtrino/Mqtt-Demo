@@ -1,0 +1,31 @@
+{
+  "driverWellBeing": [
+    {"Steering wheel control": "c1","Reaction time":"0.19s","Eye Movement":"e1"},
+    {"Steering wheel control": "c3","Reaction time":"0.23s","Eye Movement":"e2"},
+    {"Steering wheel control": "c2","Reaction time":"0.10s","Eye Movement":"e3"},
+    {"Steering wheel control": "c3","Reaction time":"0.56s","Eye Movement":"e4"},
+    {"Steering wheel control": "c1","Reaction time":"0.20s","Eye Movement":"e4"},
+    {"Steering wheel control": "c2","Reaction time":"0.04s","Eye Movement":"e1"}
+
+
+  ],
+  "safety":[
+    {"Fuel pressure":"58psi","Engine temperature":"195°C","Battery charge monitoring":"Normal"},
+    {"Fuel pressure":"52psi","Engine temperature":"185°C","Battery charge monitoring":"Normal"},
+    {"Fuel pressure":"59psi","Engine temperature":"199°C","Battery charge monitoring":"Normal"},
+    {"Fuel pressure":"60psi","Engine temperature":"205°C","Battery charge monitoring":"Normal"},
+    {"Fuel pressure":"53psi","Engine temperature":"201°C","Battery charge monitoring":"Normal"},
+    {"Fuel pressure":"59psi","Engine temperature":"202°C","Battery charge monitoring":"Normal"}
+
+
+  ],
+  "telematics":[
+    {"speed": "80kmph","Fuel":"100%","TyrePressure":"32psi"},
+    {"speed": "83kmph","Fuel":"100%","TyrePressure":"31psi"},
+    {"speed": "85kmph","Fuel":"100%","TyrePressure":"33psi"},
+    {"speed":"89kmph","Fuel":"100%","TyrePressure":"35psi"},
+    {"speed":"90kmph","Fuel":"100%","TyrePressure":"36psi"},
+    {"speed":"100kmph","Fuel":"100%","TyrePressure":"33psi"}
+  ]
+
+}
