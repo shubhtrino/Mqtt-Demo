@@ -22,6 +22,7 @@ public class Constant {
     public static final String baseTopic= "CC/topic/";
 
 
+    public static final String[] MAINTOPICS={"driverWellBeing","safety","telematics"};
 
     public static String getRandomPayLoad(String event) throws IOException, JSONException {
 
@@ -46,9 +47,12 @@ public class Constant {
         Random random= new Random();
         int objIndex =random.nextInt(5);
 
-        JSONObject obj = jsonArray.getJSONObject(objIndex);
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-        payload=timeStamp+" -> "+obj.toString();
+        if(jsonArray!=null){
+            JSONObject obj = jsonArray.getJSONObject(objIndex);
+            String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+            payload=timeStamp+" -> "+obj.toString();
+
+        }
 
         return payload;
     }

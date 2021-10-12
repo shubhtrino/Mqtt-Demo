@@ -14,6 +14,7 @@ import java.io.IOException;
 @CrossOrigin(origins = "http://localhost:4200")
 public class AppController {
 
+
     @Autowired
     private MessagingService messagingService;
 
@@ -36,5 +37,19 @@ public class AppController {
 		} catch (MqttException e) {
 			e.printStackTrace();
 		}
+    }
+
+    @GetMapping("/random/{flag}")
+    public void publishMessageRandom(@PathVariable("flag") Boolean flag) {
+        if(flag){
+            System.out.println("Request For Random received..");
+            messagingService.flag=true;
+            messagingService.generateRandomData();
+        }else{
+            System.out.println("Stop Request For Random received..");
+            messagingService.flag=false;
+        }
+
+
     }
 }
