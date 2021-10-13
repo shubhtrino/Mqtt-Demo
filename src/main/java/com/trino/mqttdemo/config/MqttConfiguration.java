@@ -15,7 +15,11 @@ public class MqttConfiguration {
     @Bean
     @ConfigurationProperties(prefix = "mqtt")
     public MqttConnectOptions mqttConnectOptions() {
-        return new MqttConnectOptions();
+
+        MqttConnectOptions mqttConnectOptions= new MqttConnectOptions();
+        mqttConnectOptions.setUserName("trino");
+        mqttConnectOptions.setPassword(new char[]{'t','e','s','t','1','2','3'});
+        return mqttConnectOptions;
     }
 
     @Bean
